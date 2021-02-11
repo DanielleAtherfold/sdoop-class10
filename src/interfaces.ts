@@ -62,7 +62,13 @@ export interface IVehicle {
 }
 
 export interface ITrailer{
-  largeAnimals:number
+    trailerSize:string;
+   //how many animals can fit
+    canFit:number;
+    animalWeight:number;
+
+
+
 }
 // export interface ICar extends IVehicle{
 //

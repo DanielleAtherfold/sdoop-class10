@@ -174,29 +174,39 @@ class Animal implements IAnimal{
 
 // console.log(farm2, trying, newfam)
 
-class Vehicle implements IVehicle{
-    towing:boolean;
-}
-class Truck implements IVehicle{
-    towing:true;
-}
-class Car implements IVehicle{
-    towing:false
-}
-class Trailer implements ITrailer {
-    largeAnimals: number;
-}
-class SmallTrailer implements ITrailer{
-    largeAnimals:1;
-}
-class MediumTrailer implements ITrailer {
-    largeAnimals:2;
-}
-class LargeTrailer implements ITrailer {
-    largeAnimals:20;
-}
-const horseTrailer = new LargeTrailer();
+// class Vehicle implements IVehicle{
+//     towing:boolean;
+// }
+// class Truck implements IVehicle{
+//     towing:true;
+// }
+// class Car implements IVehicle{
+//     towing:false
+// }
+// class Trailer implements ITrailer {
+//     largeAnimals: number;
+// }
+// class SmallTrailer implements ITrailer{
+//     largeAnimals:1;
+// }
+//
+// class MediumTrailer implements ITrailer {
+//     largeAnimals:2;
+// }
+// class LargeTrailer implements ITrailer {
+//     largeAnimals:20;
+// }
+// const horseTrailer = new LargeTrailer();
+//
+// const cattleTrailer = new MediumTrailer();
+//
+// const smallTrailer = new SmallTrailer();
 
-const cattleTrailer = new MediumTrailer();
+ class Trailer implements ITrailer{
+    public trailerSize:string;
+     //how many animals can fit
+    public canFit:number;
+    public animalWeight:number;
+    private calcWeight()
 
-const smallTrailer = new SmallTrailer();
+}
